@@ -58,6 +58,7 @@
             color: #fff;
         }
 
+        /* Adding an overlay to darken the background for better text readability */
         #hero::before {
             content: '';
             position: absolute;
@@ -65,7 +66,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
             z-index: 1;
         }
 
@@ -73,7 +74,7 @@
         #hero p,
         .cta-button {
             position: relative;
-            z-index: 2;
+            z-index: 2; /* Ensures content is above the overlay */
         }
 
         #hero h1 {
@@ -103,6 +104,7 @@
             background-color: #005bb5;
         }
 
+        /* Basic section styling */
         section {
             padding: 60px 20px;
             max-width: 1200px;
@@ -133,7 +135,7 @@
             font-size: 1rem;
         }
 
-        /* Carousel Styles */
+        /* Image Carousel */
         #clubCarousel {
             max-width: 100%;
         }
@@ -153,24 +155,28 @@
             font-size: 1.1rem;
         }
 
+        /* Carousel Buttons */
         .carousel-control-prev-icon, .carousel-control-next-icon {
             filter: invert(1);
         }
 
+        /* Add some spacing between sections */
         section + section {
             margin-top: 60px;
         }
 
+        /* Remove bullet points in Principles section */
         #principles ul {
-            list-style-type: none;
-            padding-left: 0;
+            list-style-type: none; /* Removes bullet points */
+            padding-left: 0; /* Removes left padding */
         }
 
         #principles ul li {
-            margin-bottom: 10px;
+            margin-bottom: 10px; /* Adds spacing between items */
         }
     </style>
     <link rel="stylesheet" href="styles.css">
+    <!-- Link to Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -193,6 +199,7 @@
         <a href="#mission" class="cta-button">Learn More</a>
     </section>
 
+    <!-- Carousel Section -->
     <section id="carousel">
         <h2>Club Activities</h2>
         <div id="clubCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -267,9 +274,10 @@
     <footer id="contact">
         <h3>Contact Us</h3>
         <p>Email: faueec@gmail.com</p>
-        <a href="https://docs.google.com/forms/d/1zhmiiTNPlEFMebgFtVfn-8GnJGHgj8kra6N1j8buxVs/edit" class="cta-button" target="_blank">Fill Out Our Google Form</a>
+        <a href="https://docs.google.com/forms/d/e/1zhmiiTNPlEFMebgFtVfn-8GnJGHgj8kra6N1j8buxVs/viewform" class="cta-button" target="_blank">Fill Out Our Google Form</a>
     </footer>
 
+    <!-- Link to Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
